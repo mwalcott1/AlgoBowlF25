@@ -1,0 +1,2 @@
+First click done, clicked on: (0, 2). List of blocks in chunk:
+[(0, 2), (1, 2)]

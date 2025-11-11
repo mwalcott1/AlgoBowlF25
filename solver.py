@@ -102,10 +102,10 @@ while True:
     # prevent infinite loop
     LoopIters = 0
     while k < c and LoopIters < c:
-        if grid[k][0] == -1:
-            for i in range(k, r-1):
-                for j in range(c):
-                    grid[i][j] = grid[i+1][j]
+        if grid[r-1][k] == -1:
+            for j in range(k, c-1):
+                for i in range(r):
+                    grid[i][j] = grid[i][j+1]
             # make sure the last column is all -1s (all other removals should ensure that col is -1s automatically)
             for j in range(c):
                 grid[r-1][j] = -1

@@ -1,0 +1,8 @@
+make getAllOutputs
+make getAllOutputs2
+make getAllOutputs3
+make getAllOutputs4
+make getAllOutputs5
+make getAllOutputs6
+make getAllOutputs7
+make getAllOutputs8

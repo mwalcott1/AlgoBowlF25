@@ -124,7 +124,8 @@ while True:
     # END GRAVITY SECTION
 
     # each move is defined by 1. the color removed 2. the num of blocks removed 3/4 the row/col of any block removed
-    moves.append([colRemoved, len(currentBlock), currentBlock[0][0], currentBlock[0][1]])
+    # locations are indexed frmo bottom left so we convert as well
+    moves.append([colRemoved, len(currentBlock), r - currentBlock[0][0], currentBlock[0][1]+1])
 
     # repeat this loop until we can't find a valid click
 

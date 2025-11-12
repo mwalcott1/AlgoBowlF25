@@ -5,23 +5,32 @@
 # make test
 # in a bash terminal. Note that this will overwrite anything in testOutput.txt in your current directory.
 
-# open input file
+# file input
+'''# open input file
 fileName = input()
 file = open(fileName, "r")
 fileContents = file.readlines()
-
 # extract rows and columns
 line1 = fileContents[0].split()
 r = int(line1[0])
 c = int(line1[1])
-
 # initialize grid as zeroes
 grid = [[0 for i in range(c)] for j in range(r)]
-
 for i in range(r):
     for j in range(c):
         # convert input to int (not that this really matters but int comparison is faster I guess)
-        grid[i][j] = int(fileContents[i+1][j])
+        grid[i][j] = int(fileContents[i+1][j])'''
+
+# text input
+sizes = input().split()
+r = int(sizes[0])
+c = int(sizes[1])
+grid = [[0 for i in range(c)] for j in range(r)]
+for i in range(r):
+    currentRow = input()
+    for j in range(c):
+        # convert input to int (not that this really matters but int comparison is faster I guess)
+        grid[i][j] = int(currentRow[j])
 
 # keep track of our total score and each of our moves
 score = 0

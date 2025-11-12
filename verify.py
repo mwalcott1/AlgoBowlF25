@@ -197,10 +197,10 @@ def main():
     is_valid, score, message = verify_solution(input_file, output_file, verbose=True)
     
     if is_valid:
-        print(f"\n✓ VALID SOLUTION with score {score}")
+        print(f"\n VALID SOLUTION with score {score}")
         sys.exit(0)
     else:
-        print(f"\n✗ INVALID SOLUTION: {message}")
+        print(f"\n INVALID SOLUTION: {message}")
         sys.exit(1)
 
 if __name__ == "__main__":

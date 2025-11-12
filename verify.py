@@ -188,7 +188,7 @@ def verify_solution(input_file, output_file, verbose=True):
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: python verifier.py <input_file> <output_file>")
+        print("Usage: python verify.py <input_file> <output_file>")
         sys.exit(1)
     
     input_file = sys.argv[1]

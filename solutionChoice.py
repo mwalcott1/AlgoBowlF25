@@ -18,13 +18,16 @@ for suffix in suffixes:
         if currentScore > bestFoundNum:
             bestFoundNum = currentScore
             bestFoundIdx = -1
+        # not all solver 12 outputs are computed
+        with open(f'Outputs12/{suffix}.txt') as file:
+            currentScore = int(file.readline().strip())
+        if currentScore > bestFoundNum:
+            bestFoundNum = currentScore
+            bestFoundIdx = 11
     except Exception:
         pass
 
     for i in range(11):
-        if i == 8:
-            continue
-
         fileName = "Outputs" + str(i+1) + "/" + str(suffix) + ".txt"
 
         # find score from solver i+1
@@ -47,5 +50,5 @@ for suffix in suffixes:
         sys.exit(1)
 
     # print what best solution was, and also copy file to a different directory for easy upload access
-    print(f'Best solution for suffix: {suffix} is from solver {bestFoundIdx+1}/8 with score {bestFoundNum}')
+    print(f'Best solution for suffix: {suffix} is from solver {bestFoundIdx+1}/11 with score {bestFoundNum}')
     shutil.copy(bestSolFile, f'bestOutputs/{suffix}.txt')

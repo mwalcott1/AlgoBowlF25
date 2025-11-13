@@ -1,0 +1,98 @@
+Iter 0
+Iter 1
+Iter 2
+Iter 3
+Iter 4
+Iter 5
+Iter 6
+Iter 7
+Iter 8
+Iter 9
+Iter 10
+Iter 11
+Iter 12
+Iter 13
+Iter 14
+Iter 15
+Iter 16
+Iter 17
+Iter 18
+Iter 19
+Iter 20
+Iter 21
+Iter 22
+Iter 23
+Iter 24
+Iter 25
+Iter 26
+Iter 27
+Iter 28
+Iter 29
+Iter 30
+Iter 31
+Iter 32
+Iter 33
+Iter 34
+Iter 35
+Iter 36
+Iter 37
+Iter 38
+Iter 39
+Iter 40
+Iter 41
+Iter 42
+Iter 43
+Iter 44
+Iter 45
+Iter 46
+Iter 47
+Iter 48
+Iter 49
+455
+46
+4 2 12 7
+2 6 14 8
+1 2 11 2
+3 3 9 10
+3 3 3 9
+1 2 4 2
+1 2 1 1
+1 2 1 8
+4 2 3 5
+4 2 1 5
+2 6 7 4
+3 2 4 9
+5 6 7 5
+5 2 11 1
+4 3 7 11
+6 2 7 2
+3 4 1 11
+4 2 4 8
+1 4 10 9
+6 3 1 2
+6 3 9 11
+2 5 3 4
+6 3 6 8
+6 3 8 7
+2 2 8 1
+2 2 9 12
+3 11 7 5
+6 11 3 12
+4 2 13 3
+5 4 4 4
+4 2 9 3
+2 5 4 8
+6 2 7 9
+1 2 3 4
+3 4 7 2
+6 5 2 5
+5 2 4 1
+5 3 4 10
+1 7 3 6
+3 2 4 9
+5 2 3 9
+4 2 2 6
+5 3 1 1
+2 2 1 6
+3 2 2 7
+4 2 2 9

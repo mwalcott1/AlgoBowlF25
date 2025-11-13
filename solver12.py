@@ -40,48 +40,44 @@ for i in range(r):
 # keep track of our best score and each of its moves
 potentialOutput = [0, 0]
 
-# iterate until we can't find more moves
-numRandomIters = 50
+# repetitions
+numRandomIters = 100
 
 for z in range(numRandomIters):
     gridCopy = copy.deepcopy(grid)
     moves = []
     score = 0
+    # iterate until we can't find more moves
     while True:
         # find a valid click to make
         # BOZO METHOD!!!
 
         # iterate random (i, j) selections until we find a valid move
-        checked = []
-        tries = 0
-        while True:
-            tries += 1
-            i = random.randint(0, r-1)
-            j = random.randint(0, c-1)
-            if gridCopy[i][j] != -1 and (i, j) not in checked:
-                checked.append((i, j))
-                currentBlock = [(i, j)]
-                blocksToCheck = [(i, j)]
-                while blocksToCheck != []:
-                    currentCheck = blocksToCheck[0]
-                    # if the block one over exists, and isn't already in our list, and matches color, then add to group
-                    # and also list to iter over
-                    if currentCheck[0] != 0 and (currentCheck[0]-1, currentCheck[1]) not in currentBlock and gridCopy[currentCheck[0]-1][currentCheck[1]] == gridCopy[currentCheck[0]][currentCheck[1]]:
-                        currentBlock.append((currentCheck[0]-1, currentCheck[1]))
-                        blocksToCheck.append((currentCheck[0]-1, currentCheck[1]))
-                    if currentCheck[0] != r-1 and (currentCheck[0]+1, currentCheck[1]) not in currentBlock and gridCopy[currentCheck[0]+1][currentCheck[1]] == gridCopy[currentCheck[0]][currentCheck[1]]:
-                        currentBlock.append((currentCheck[0]+1, currentCheck[1]))
-                        blocksToCheck.append((currentCheck[0]+1, currentCheck[1]))
-                    if currentCheck[1] != 0 and (currentCheck[0], currentCheck[1]-1) not in currentBlock and gridCopy[currentCheck[0]][currentCheck[1]-1] == gridCopy[currentCheck[0]][currentCheck[1]]:
-                        currentBlock.append((currentCheck[0], currentCheck[1]-1))
-                        blocksToCheck.append((currentCheck[0], currentCheck[1]-1))
-                    if currentCheck[1] != c-1 and (currentCheck[0], currentCheck[1]+1) not in currentBlock and gridCopy[currentCheck[0]][currentCheck[1]+1] == gridCopy[currentCheck[0]][currentCheck[1]]:
-                        currentBlock.append((currentCheck[0], currentCheck[1]+1))
-                        blocksToCheck.append((currentCheck[0], currentCheck[1]+1))
-                    # remove thing we're currently checking from stack
-                    blocksToCheck.pop(0)
-                if len(currentBlock) > 1 or tries > r*c:
-                    break
+        cells = [(i, j) for i in range(r) for j in range(c) if gridCopy[i][j] != -1]
+        random.shuffle(cells)
+        for cell in cells:
+            currentBlock = [cell]
+            blocksToCheck = [cell]
+            while blocksToCheck != []:
+                currentCheck = blocksToCheck[0]
+                # if the block one over exists, and isn't already in our list, and matches color, then add to group
+                # and also list to iter over
+                if currentCheck[0] != 0 and (currentCheck[0]-1, currentCheck[1]) not in currentBlock and gridCopy[currentCheck[0]-1][currentCheck[1]] == gridCopy[currentCheck[0]][currentCheck[1]]:
+                    currentBlock.append((currentCheck[0]-1, currentCheck[1]))
+                    blocksToCheck.append((currentCheck[0]-1, currentCheck[1]))
+                if currentCheck[0] != r-1 and (currentCheck[0]+1, currentCheck[1]) not in currentBlock and gridCopy[currentCheck[0]+1][currentCheck[1]] == gridCopy[currentCheck[0]][currentCheck[1]]:
+                    currentBlock.append((currentCheck[0]+1, currentCheck[1]))
+                    blocksToCheck.append((currentCheck[0]+1, currentCheck[1]))
+                if currentCheck[1] != 0 and (currentCheck[0], currentCheck[1]-1) not in currentBlock and gridCopy[currentCheck[0]][currentCheck[1]-1] == gridCopy[currentCheck[0]][currentCheck[1]]:
+                    currentBlock.append((currentCheck[0], currentCheck[1]-1))
+                    blocksToCheck.append((currentCheck[0], currentCheck[1]-1))
+                if currentCheck[1] != c-1 and (currentCheck[0], currentCheck[1]+1) not in currentBlock and gridCopy[currentCheck[0]][currentCheck[1]+1] == gridCopy[currentCheck[0]][currentCheck[1]]:
+                    currentBlock.append((currentCheck[0], currentCheck[1]+1))
+                    blocksToCheck.append((currentCheck[0], currentCheck[1]+1))
+                # remove thing we're currently checking from stack
+                blocksToCheck.pop(0)
+            if len(currentBlock) > 1:
+                break
 
         # if we didn't find a valid click, we are done and can break out of the while loop
         if len(currentBlock) < 2:

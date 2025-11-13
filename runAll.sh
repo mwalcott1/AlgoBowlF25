@@ -1,4 +1,4 @@
-make getAllOutputs
+make getAllOutputs1
 make getAllOutputs2
 make getAllOutputs3
 make getAllOutputs4

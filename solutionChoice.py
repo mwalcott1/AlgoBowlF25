@@ -10,9 +10,21 @@ suffixes = [1062, 1063, 1064, 1065, 1066, 1067, 1068, 1069, 1070, 1071, 1072, 10
 # for each input
 for suffix in suffixes:
     bestFoundNum = 0
-    bestFoundIdx = -1
+    bestFoundIdx = -2
     # iterate over all outputs to find best solution
-    for i in range(8):
+    try:
+        with open(f'OutputsCustom/Custom{suffix}.txt') as file:
+            currentScore = int(file.readline().strip())
+        if currentScore > bestFoundNum:
+            bestFoundNum = currentScore
+            bestFoundIdx = -1
+    except Exception:
+        pass
+
+    for i in range(11):
+        if i == 8:
+            continue
+
         fileName = "Outputs" + str(i+1) + "/" + str(suffix) + ".txt"
 
         # find score from solver i+1
@@ -25,7 +37,10 @@ for suffix in suffixes:
             bestFoundIdx = i
 
     # test to make sure this solution is valid
-    bestSolFile = "Outputs" + str(bestFoundIdx+1) + "/" + str(suffix) + ".txt"
+    if bestFoundIdx == -1:
+        bestSolFile = "OutputsCustom/Custom" + str(suffix) + ".txt"
+    else:
+        bestSolFile = "Outputs" + str(bestFoundIdx+1) + "/" + str(suffix) + ".txt"
     isValid, score, message = verify.verify_solution(f'Inputs/input_group{suffix}.txt', bestSolFile, verbose=False)
     if not isValid:
         print(f'Invalid output found for suffix {suffix} and best output {bestSolFile}.')
@@ -33,4 +48,4 @@ for suffix in suffixes:
 
     # print what best solution was, and also copy file to a different directory for easy upload access
     print(f'Best solution for suffix: {suffix} is from solver {bestFoundIdx+1}/8 with score {bestFoundNum}')
-    shutil.copy(bestSolFile, "bestOutputs")
+    shutil.copy(bestSolFile, f'bestOutputs/{suffix}.txt')

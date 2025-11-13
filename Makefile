@@ -1,7 +1,7 @@
 test:
 	cat problemInput.txt | python solver.py > testOutput.txt
 
-getAllOutputs:
+getAllOutputs1:
 	cat Inputs/input_group1062.txt | python solver1.py > Outputs1/1062.txt
 	cat Inputs/input_group1063.txt | python solver1.py > Outputs1/1063.txt
 	cat Inputs/input_group1064.txt | python solver1.py > Outputs1/1064.txt
@@ -360,3 +360,138 @@ getAllOutputs8:
 	cat Inputs/input_group1102.txt | python solver8.py > Outputs8/1102.txt
 	cat Inputs/input_group1103.txt | python solver8.py > Outputs8/1103.txt
 	cat Inputs/input_group1128.txt | python solver8.py > Outputs8/1128.txt
+
+getAllOutputs10:
+	cat Inputs/input_group1062.txt | python solver10.py > Outputs10/1062.txt
+	cat Inputs/input_group1063.txt | python solver10.py > Outputs10/1063.txt
+	cat Inputs/input_group1064.txt | python solver10.py > Outputs10/1064.txt
+	cat Inputs/input_group1065.txt | python solver10.py > Outputs10/1065.txt
+	cat Inputs/input_group1066.txt | python solver10.py > Outputs10/1066.txt
+	cat Inputs/input_group1067.txt | python solver10.py > Outputs10/1067.txt
+	cat Inputs/input_group1068.txt | python solver10.py > Outputs10/1068.txt
+	cat Inputs/input_group1069.txt | python solver10.py > Outputs10/1069.txt
+	cat Inputs/input_group1070.txt | python solver10.py > Outputs10/1070.txt
+	cat Inputs/input_group1071.txt | python solver10.py > Outputs10/1071.txt
+	cat Inputs/input_group1072.txt | python solver10.py > Outputs10/1072.txt
+	cat Inputs/input_group1073.txt | python solver10.py > Outputs10/1073.txt
+	cat Inputs/input_group1074.txt | python solver10.py > Outputs10/1074.txt
+	cat Inputs/input_group1075.txt | python solver10.py > Outputs10/1075.txt
+	cat Inputs/input_group1076.txt | python solver10.py > Outputs10/1076.txt
+	cat Inputs/input_group1077.txt | python solver10.py > Outputs10/1077.txt
+	cat Inputs/input_group1078.txt | python solver10.py > Outputs10/1078.txt
+	cat Inputs/input_group1079.txt | python solver10.py > Outputs10/1079.txt
+	cat Inputs/input_group1080.txt | python solver10.py > Outputs10/1080.txt
+	cat Inputs/input_group1081.txt | python solver10.py > Outputs10/1081.txt
+	cat Inputs/input_group1082.txt | python solver10.py > Outputs10/1082.txt
+	cat Inputs/input_group1083.txt | python solver10.py > Outputs10/1083.txt
+	cat Inputs/input_group1084.txt | python solver10.py > Outputs10/1084.txt
+	cat Inputs/input_group1085.txt | python solver10.py > Outputs10/1085.txt
+	cat Inputs/input_group1086.txt | python solver10.py > Outputs10/1086.txt
+	cat Inputs/input_group1087.txt | python solver10.py > Outputs10/1087.txt
+	cat Inputs/input_group1088.txt | python solver10.py > Outputs10/1088.txt
+	cat Inputs/input_group1089.txt | python solver10.py > Outputs10/1089.txt
+	cat Inputs/input_group1090.txt | python solver10.py > Outputs10/1090.txt
+	cat Inputs/input_group1091.txt | python solver10.py > Outputs10/1091.txt
+	cat Inputs/input_group1092.txt | python solver10.py > Outputs10/1092.txt
+	cat Inputs/input_group1093.txt | python solver10.py > Outputs10/1093.txt
+	cat Inputs/input_group1094.txt | python solver10.py > Outputs10/1094.txt
+	cat Inputs/input_group1095.txt | python solver10.py > Outputs10/1095.txt
+	cat Inputs/input_group1096.txt | python solver10.py > Outputs10/1096.txt
+	cat Inputs/input_group1097.txt | python solver10.py > Outputs10/1097.txt
+	cat Inputs/input_group1098.txt | python solver10.py > Outputs10/1098.txt
+	cat Inputs/input_group1099.txt | python solver10.py > Outputs10/1099.txt
+	cat Inputs/input_group1100.txt | python solver10.py > Outputs10/1100.txt
+	cat Inputs/input_group1101.txt | python solver10.py > Outputs10/1101.txt
+	cat Inputs/input_group1102.txt | python solver10.py > Outputs10/1102.txt
+	cat Inputs/input_group1103.txt | python solver10.py > Outputs10/1103.txt
+	cat Inputs/input_group1128.txt | python solver10.py > Outputs10/1128.txt
+
+getAllOutputs11:
+	cat Inputs/input_group1062.txt | python solver11.py > Outputs11/1062.txt
+	cat Inputs/input_group1063.txt | python solver11.py > Outputs11/1063.txt
+	cat Inputs/input_group1064.txt | python solver11.py > Outputs11/1064.txt
+	cat Inputs/input_group1065.txt | python solver11.py > Outputs11/1065.txt
+	cat Inputs/input_group1066.txt | python solver11.py > Outputs11/1066.txt
+	cat Inputs/input_group1067.txt | python solver11.py > Outputs11/1067.txt
+	cat Inputs/input_group1068.txt | python solver11.py > Outputs11/1068.txt
+	cat Inputs/input_group1069.txt | python solver11.py > Outputs11/1069.txt
+	cat Inputs/input_group1070.txt | python solver11.py > Outputs11/1070.txt
+	cat Inputs/input_group1071.txt | python solver11.py > Outputs11/1071.txt
+	cat Inputs/input_group1072.txt | python solver11.py > Outputs11/1072.txt
+	cat Inputs/input_group1073.txt | python solver11.py > Outputs11/1073.txt
+	cat Inputs/input_group1074.txt | python solver11.py > Outputs11/1074.txt
+	cat Inputs/input_group1075.txt | python solver11.py > Outputs11/1075.txt
+	cat Inputs/input_group1076.txt | python solver11.py > Outputs11/1076.txt
+	cat Inputs/input_group1077.txt | python solver11.py > Outputs11/1077.txt
+	cat Inputs/input_group1078.txt | python solver11.py > Outputs11/1078.txt
+	cat Inputs/input_group1079.txt | python solver11.py > Outputs11/1079.txt
+	cat Inputs/input_group1080.txt | python solver11.py > Outputs11/1080.txt
+	cat Inputs/input_group1081.txt | python solver11.py > Outputs11/1081.txt
+	cat Inputs/input_group1082.txt | python solver11.py > Outputs11/1082.txt
+	cat Inputs/input_group1083.txt | python solver11.py > Outputs11/1083.txt
+	cat Inputs/input_group1084.txt | python solver11.py > Outputs11/1084.txt
+	cat Inputs/input_group1085.txt | python solver11.py > Outputs11/1085.txt
+	cat Inputs/input_group1086.txt | python solver11.py > Outputs11/1086.txt
+	cat Inputs/input_group1087.txt | python solver11.py > Outputs11/1087.txt
+	cat Inputs/input_group1088.txt | python solver11.py > Outputs11/1088.txt
+	cat Inputs/input_group1089.txt | python solver11.py > Outputs11/1089.txt
+	cat Inputs/input_group1090.txt | python solver11.py > Outputs11/1090.txt
+	cat Inputs/input_group1091.txt | python solver11.py > Outputs11/1091.txt
+	cat Inputs/input_group1092.txt | python solver11.py > Outputs11/1092.txt
+	cat Inputs/input_group1093.txt | python solver11.py > Outputs11/1093.txt
+	cat Inputs/input_group1094.txt | python solver11.py > Outputs11/1094.txt
+	cat Inputs/input_group1095.txt | python solver11.py > Outputs11/1095.txt
+	cat Inputs/input_group1096.txt | python solver11.py > Outputs11/1096.txt
+	cat Inputs/input_group1097.txt | python solver11.py > Outputs11/1097.txt
+	cat Inputs/input_group1098.txt | python solver11.py > Outputs11/1098.txt
+	cat Inputs/input_group1099.txt | python solver11.py > Outputs11/1099.txt
+	cat Inputs/input_group1100.txt | python solver11.py > Outputs11/1100.txt
+	cat Inputs/input_group1101.txt | python solver11.py > Outputs11/1101.txt
+	cat Inputs/input_group1102.txt | python solver11.py > Outputs11/1102.txt
+	cat Inputs/input_group1103.txt | python solver11.py > Outputs11/1103.txt
+	cat Inputs/input_group1128.txt | python solver11.py > Outputs11/1128.txt
+
+getAllOutputs12:
+	cat Inputs/input_group1062.txt | python solver12.py > Outputs12/1062.txt
+	cat Inputs/input_group1063.txt | python solver12.py > Outputs12/1063.txt
+	cat Inputs/input_group1064.txt | python solver12.py > Outputs12/1064.txt
+	cat Inputs/input_group1065.txt | python solver12.py > Outputs12/1065.txt
+	cat Inputs/input_group1066.txt | python solver12.py > Outputs12/1066.txt
+	cat Inputs/input_group1067.txt | python solver12.py > Outputs12/1067.txt
+	cat Inputs/input_group1068.txt | python solver12.py > Outputs12/1068.txt
+	cat Inputs/input_group1069.txt | python solver12.py > Outputs12/1069.txt
+	cat Inputs/input_group1070.txt | python solver12.py > Outputs12/1070.txt
+	cat Inputs/input_group1071.txt | python solver12.py > Outputs12/1071.txt
+	cat Inputs/input_group1072.txt | python solver12.py > Outputs12/1072.txt
+	cat Inputs/input_group1073.txt | python solver12.py > Outputs12/1073.txt
+	cat Inputs/input_group1074.txt | python solver12.py > Outputs12/1074.txt
+	cat Inputs/input_group1075.txt | python solver12.py > Outputs12/1075.txt
+	cat Inputs/input_group1076.txt | python solver12.py > Outputs12/1076.txt
+	cat Inputs/input_group1077.txt | python solver12.py > Outputs12/1077.txt
+	cat Inputs/input_group1078.txt | python solver12.py > Outputs12/1078.txt
+	cat Inputs/input_group1079.txt | python solver12.py > Outputs12/1079.txt
+	cat Inputs/input_group1080.txt | python solver12.py > Outputs12/1080.txt
+	cat Inputs/input_group1081.txt | python solver12.py > Outputs12/1081.txt
+	cat Inputs/input_group1082.txt | python solver12.py > Outputs12/1082.txt
+	cat Inputs/input_group1083.txt | python solver12.py > Outputs12/1083.txt
+	cat Inputs/input_group1084.txt | python solver12.py > Outputs12/1084.txt
+	cat Inputs/input_group1085.txt | python solver12.py > Outputs12/1085.txt
+	cat Inputs/input_group1086.txt | python solver12.py > Outputs12/1086.txt
+	cat Inputs/input_group1087.txt | python solver12.py > Outputs12/1087.txt
+	cat Inputs/input_group1088.txt | python solver12.py > Outputs12/1088.txt
+	cat Inputs/input_group1089.txt | python solver12.py > Outputs12/1089.txt
+	cat Inputs/input_group1090.txt | python solver12.py > Outputs12/1090.txt
+	cat Inputs/input_group1091.txt | python solver12.py > Outputs12/1091.txt
+	cat Inputs/input_group1092.txt | python solver12.py > Outputs12/1092.txt
+	cat Inputs/input_group1093.txt | python solver12.py > Outputs12/1093.txt
+	cat Inputs/input_group1094.txt | python solver12.py > Outputs12/1094.txt
+	cat Inputs/input_group1095.txt | python solver12.py > Outputs12/1095.txt
+	cat Inputs/input_group1096.txt | python solver12.py > Outputs12/1096.txt
+	cat Inputs/input_group1097.txt | python solver12.py > Outputs12/1097.txt
+	cat Inputs/input_group1098.txt | python solver12.py > Outputs12/1098.txt
+	cat Inputs/input_group1099.txt | python solver12.py > Outputs12/1099.txt
+	cat Inputs/input_group1100.txt | python solver12.py > Outputs12/1100.txt
+	cat Inputs/input_group1101.txt | python solver12.py > Outputs12/1101.txt
+	cat Inputs/input_group1102.txt | python solver12.py > Outputs12/1102.txt
+	cat Inputs/input_group1103.txt | python solver12.py > Outputs12/1103.txt
+	cat Inputs/input_group1128.txt | python solver12.py > Outputs12/1128.txt

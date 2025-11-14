@@ -1,0 +1,49 @@
+Total files: 43
+Valid: 42
+Invalid: 1
+Total score: 3585045
+Average score: 85358.21
+
+input_group1062.txt: VALID - 27301
+input_group1063.txt: VALID - 203
+input_group1064.txt: VALID - 8854
+input_group1065.txt: VALID - 6603
+input_group1066.txt: VALID - 2228
+input_group1067.txt: VALID - 41855
+input_group1068.txt: VALID - 729
+input_group1069.txt: VALID - 969
+input_group1070.txt: VALID - 90230
+input_group1071.txt: VALID - 31862
+input_group1072.txt: VALID - 15586
+input_group1073.txt: VALID - 7018
+input_group1074.txt: VALID - 15699
+input_group1075.txt: VALID - 15450
+input_group1076.txt: VALID - 276
+input_group1077.txt: VALID - 14623
+input_group1078.txt: VALID - 2675
+input_group1079.txt: VALID - 19207
+input_group1080.txt: VALID - 15277
+input_group1081.txt: VALID - 8366
+input_group1082.txt: VALID - 1539
+input_group1083.txt: VALID - 28327
+input_group1084.txt: VALID - 15965
+input_group1085.txt: VALID - 5000
+input_group1086.txt: VALID - 72740
+input_group1087.txt: VALID - 22048
+input_group1088.txt: VALID - 654984
+input_group1089.txt: VALID - 15502
+input_group1090.txt: VALID - 26916
+input_group1091.txt: VALID - 27366
+input_group1092.txt: VALID - 58428
+input_group1093.txt: INVALID - 101108
+input_group1094.txt: VALID - 121573
+input_group1095.txt: VALID - 71344
+input_group1096.txt: VALID - 699822
+input_group1097.txt: VALID - 15868
+input_group1098.txt: VALID - 1225046
+input_group1099.txt: VALID - 113399
+input_group1100.txt: VALID - 22554
+input_group1101.txt: VALID - 24962
+input_group1102.txt: VALID - 16172
+input_group1103.txt: VALID - 4572
+input_group1128.txt: VALID - 15907
